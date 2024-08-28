@@ -1,11 +1,11 @@
-# To show this app works fine, we need to create a RDS instance at first.
+
+# Create an # To show this app works fine, we need to create a RDS instance at first.
 
 # Import Flask modules
 # As we know, we are gonna import the necessary libraries. We've also imported
 from flask import Flask, request, render_template
 from flaskext.mysql import MySQL
-
-# Create an object named app
+object named app
 app = Flask(__name__)
 
 # The hardest part of this project is to get the endpoint of RDS instances. Since our RDS is created within cloud formation template, we need to get RDS endpoint and paste it here as environmental variable using Launch templates user data.
